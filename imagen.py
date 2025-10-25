@@ -3,9 +3,9 @@ from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 
 # === CONFIGURACIÓN ===
-TOKEN = os.environ["BOT_TOKEN"]          # ⬅️ Leído desde Railway
-GRUPO_ID = -1002443349220
-TOPIC_ID = 26431
+TOKEN = os.environ["BOT_TOKEN"]          # ¡Esta variable DEBE estar en Railway!
+GRUPO_ID = -1002443349220                # ID del grupo (con -100)
+TOPIC_ID = 26431                         # ID del tema
 STICKER_FILE_ID = "CAACAgQAAyEFAASRoozkAAJnV2j9BKH1Al2z96_OjzMAAbWrbkOA6AACaQEAAno2ig23KLlCi4SZUDYE"
 
 async def reenviar_imagen(update: Update, context: ContextTypes.DEFAULT_TYPE):
